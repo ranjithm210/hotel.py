@@ -64,7 +64,7 @@ while True:
                             if pin2==pin:
                                  print("enter the new pin")
                                  pin3=int(input(":"))
-                                 pin3=pin
+                                 pin3=actual_pin
                                  print("pin has been changed successfully")
                             else:
                                  print("incorrect old pin")
@@ -76,10 +76,9 @@ while True:
               print("Invalid PIN")
               attempt+=1
               if attempt>=2:
-                blocked=True
-                print("ur card has been blocked")
+                 blocked=True
         if x==2:
-          print("thank you visit again")
+          print("thank you visit again!!!!!!!!!!\n")
             
 
     else:           
