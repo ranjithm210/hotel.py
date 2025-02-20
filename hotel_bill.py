@@ -46,7 +46,7 @@ tax_total = tax + total
 
 print(
     f"""
-            Shivara Thindi
+               Shivara Thindi
 -----------------------------------------------------
                                     Date:21/01/2024
 GSTIN: PENTAGON                                    
