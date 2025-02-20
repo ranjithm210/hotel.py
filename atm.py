@@ -20,7 +20,7 @@ while True:
                print("your card has been blocked contack your branch for further quires")
                inserted=False
                continue
-            if actual_pin== None:
+            elif actual_pin== None:
                 actual_pin = int(input("set your new PIN"))
                 print("enter the PIN")
                 pin=int(input())
