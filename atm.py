@@ -23,22 +23,22 @@ while True:
             elif actual_pin== None:
                 actual_pin = int(input("set your new PIN"))
                 print("enter the PIN")
-                pin=int(input())
-                if pin == actual_pin:
-                    while True:
-                        print("1.DEPOSITE\n2.WITHDRAWAL\n3.MINI STATEMENT\n4.PIN CHANGE\n5.EXIT\n")
-                        option=int(input("select one of the option above:"))
-                        if option ==1:
-                                print("deposite")
-                                amount=int(input("enter the amount:"))
-                                if amount%100 == 0:
-                                        balance+=amount
-                                        transactions.append(amount)
-                                        print("cash has been accepted")
-                                        print("Available balance=",balance)
-                                else:
+            pin=int(input())
+            if pin == actual_pin:
+                while True:
+                    print("1.DEPOSITE\n2.WITHDRAWAL\n3.MINI STATEMENT\n4.PIN CHANGE\n5.EXIT\n")
+                    option=int(input("select one of the option above:"))
+                    if option ==1:
+                        print("deposite")
+                        amount=int(input("enter the amount:"))
+                        if amount%100 == 0:
+                            balance+=amount
+                            transactions.append(amount)
+                            print("cash has been accepted")
+                            print("Available balance=",balance)
+                        else:
                                         print("feed the multiples 100 only")
-                        if option ==2:
+                    if option ==2:
                                     print("withdrawal")
                                     amount=int(input("enter the amount:"))
                                     if amount<balance:
@@ -51,14 +51,14 @@ while True:
                                             print("enter the multiples 100 only")    
                                     else:
                                         print("insufficient funds")  
-                        if option==3: 
+                    if option==3: 
                             print("mini statement")
                             realtime=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             print(realtime)
                             print(transactions)
                             print(balance)
 
-                        if option==4:
+                    if option==4:
                             print("PIN change")
                             pin2=int(input("Enter the old PIN:"))
                             if pin2==pin:
@@ -68,9 +68,9 @@ while True:
                                  print("pin has been changed successfully")
                             else:
                                  print("incorrect old pin")
-                        if option==5:
+                    if option==5:
                              print("thank you visit again")
-                             break  
+                             break 
                                         
             else:
               print("Invalid PIN")
@@ -79,7 +79,7 @@ while True:
                  blocked=True
         if x==2:
           print("thank you visit again!!!!!!!!!!\n")
-            
+          break 
 
     else:           
       inserted=False
