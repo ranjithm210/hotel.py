@@ -6,6 +6,7 @@ Menu
 2. Vada
 3. Poori
 4.Biriyani
+5.icecream
 
 """
 )
@@ -32,6 +33,9 @@ while True:
     elif x==4:
         item = 'Biriyani'
         cost = 250
+    elif x==5:
+        item='icecream'
+        cost = 45
     else:
         print("Invalid selection, please try again.")
         continue
